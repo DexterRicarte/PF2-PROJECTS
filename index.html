@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Word Guessing Game</title>
+  <style>
+    body {
+      font-family:'Times New Roman', Times, serif;
+      line-height: 1.6;
+      margin: 0;
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      background-color: #318fbe;
+      
+      
+    }
+    h1{
+        color: rgb(255, 255, 255);
+    }
+    .container{
+        border: 1px solid #ffffff;
+        padding: 10px;
+
+        border-radius: 20px;
+        text-align: center;
+        width: 400px;
+        background-color: #274d60;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+    .win { color: rgb(9, 214, 9); }
+    .lose { color: red; }
+
+    input[type="text"] {
+      width: 50%;
+      padding: 5px;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      margin-bottom: 15px;
+      background-color: #ffffff;
+      
+    
+    }
+    button {
+      padding: 5px 20px;
+      background-color: #6ba3be;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0c969c;
+    }
+    input{
+        color: rgb(0, 0, 0);
+    }
+    
+
+    
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Secret Word!</h1>
+        <input type="text" id="userInput" placeholder="Enter your guess"/>
+        <button onclick="submitGuess()">Submit</button>
+        <button onclick="window.location.reload()">Restart Game</button>
+        <div id="message"></div>
+    </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
